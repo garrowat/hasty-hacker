@@ -1,5 +1,15 @@
 const Challenge = require('../../database/models/challenge');
 
-exports.challenge = (req, res) => {
-  res.status(200).send('Hi!');
+exports.createChallenge = ({ name, challengeText, answers }) => {
+  const challenge = new Challenge(
+    {
+      name,
+      challengeText,
+      answers,
+    },
+  );
+
+  return challenge.save();
 };
+
+exports.getRandomChallenge = () => Challenge.findOne().exec();
