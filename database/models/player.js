@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 // ToAdd: Memecount (for favorite Meme feature)
 
 const playerSchema = new Schema({
-  name: String,
+  name: { type: String, required: true },
   avatar: String,
   wins: Number,
 });
