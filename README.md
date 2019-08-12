@@ -1,4 +1,4 @@
-# Hasty Hacker
+# Hyper Hacker
 Real-time racing with coding challenges for energetic engineers and swift students.
 
 # Motivation
