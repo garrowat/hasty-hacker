@@ -1,10 +1,16 @@
 const Challenge = require('../../database/models/challenge');
 
-exports.createChallenge = ({ name, challengeText, answers }) => {
+exports.createChallenge = ({
+  name,
+  challengePrompt,
+  challengeText,
+  answers,
+}) => {
   const challenge = new Challenge(
     {
       name,
-      challengeText,
+      challengePrompt,
+      challengeText: challengeText || '',
       answers,
     },
   );

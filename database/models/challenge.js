@@ -10,8 +10,9 @@ const { Schema } = mongoose;
 
 const challengeSchema = new Schema({
   name: { type: String, required: true },
-  challengeText: { type: String, required: true },
-  answers: String,
+  challengePrompt: { type: String, required: true },
+  challengeText: { type: String },
+  answers: Array,
 });
 
 module.exports = mongoose.model('Challenge', challengeSchema);

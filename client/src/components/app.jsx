@@ -49,7 +49,6 @@ class App extends React.Component {
             justify="flex-start"
             alignItems="stretch"
           >
-
             {players.map((player) => (
               <Grid item xs={3}>
                 <Paper style={{ padding: '5%' }}>
