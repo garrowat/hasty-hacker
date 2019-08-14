@@ -42,4 +42,3 @@ connection.dropCollection('challenges')
     return Challenge.insertMany(challenges, console.log);
   })
   .then(console.log)
-  .next();
